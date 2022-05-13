@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <title>Hey</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
+<div class="intro-container">
+    <div id="output-box">
+        <p class="output" data-words="This Place is not for you,"> </p>
+        <p class="output" data-words="Begone Traveler." > </p>
+    </div>
+<div id="3d-model-viewer">
+
+
+<model-viewer src="dist/3d-assets/ExitSign.gltf" alt="Rose 3D Model" auto-rotate camera-controls>
+</model-viewer>
+
+
+</div>
+    <div class="intro-answer-buttons">
+        <form action="">
+            <label>  
+                <a href="index.html"><button id="submit" type="button" >Start Over</button></a>
+            </label>
+        </form>
+    </div>
+
+</div>
+<script  type="module" src="./javascript/main.js"></script>
+<!-- this allows me to use the 3D model -->
+</body>
+</html>

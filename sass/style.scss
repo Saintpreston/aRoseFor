@@ -1,0 +1,92 @@
+@import './variables', "./cursor", "./layout", "./model-viewer";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: $dark-green-background;
+    font-family: 'Source Code Pro', monospace;
+   
+}
+
+
+.intro-container
+{   
+   border: ridge;
+   border-color: $main-font-color;      
+   border-width: 2px;
+   
+   
+   
+   p
+   {
+       color: $main-font-color;
+       font-size: 1.4em;
+       text-shadow: 1px 2px 10px $main-font-color;
+   }
+
+
+   #3d-model-viewer
+{
+height: 350%;
+width: 350%;
+background-color: aqua;
+border: ridge;
+border-width: 2px;
+
+
+model-viewer
+{
+    height: 200%;
+    width: 200%;
+    background-color: aqua;
+    border: dotted;
+  
+}
+
+}
+
+
+}
+
+.intro-answer-buttons
+{
+
+    input{
+
+        background-color: $dark-green-background;
+        border: solid;
+        border-color: $main-font-color;
+        border-width: 3px;
+        font-family: 'Source Code Pro', monospace;
+        
+        &:focus
+        {               
+            border-color: $main-font-color;
+            box-shadow: 2px 2px 10px $main-font-color;
+            border-width: 3px;
+            outline: none;
+            font-family: 'Source Code Pro', monospace;
+            color: $main-font-color;
+        
+        }
+    }
+    button
+   {
+            
+       background: none;      
+       border: solid;
+       border-width: 3px; 
+       font-family: 'Source Code Pro', monospace;
+       color: $main-font-color;
+       
+        &:hover
+        {
+            text-shadow: 2px 2px 30px $main-font-color;
+            box-shadow:  2px 2px 10px $main-font-color;
+        }
+   }
+}
